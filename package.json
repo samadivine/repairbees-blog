@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@google/genai": "^1.48.0",
+    "dotenv": "^17.4.1",
     "geist": "^1.7.0",
     "gray-matter": "^4.0.3",
     "next": "16.2.2",
