@@ -11,7 +11,7 @@ Read ALL of these files before writing anything:
 - `context/seo-guidelines.md` — SEO requirements, scoring rubric
 - `context/article-template.md` — article structure and format
 - `context/ai-tropes.md` — AI writing patterns to avoid
-- `context/skool-cta-templates.md` — CTA templates and UTM structure
+- `context/cta-templates.md` — CTA templates and UTM structure
 
 Also check:
 - `topics/discovered.json` — for any research notes on this topic
@@ -22,7 +22,7 @@ Also check:
 Check Claude's memory for accumulated learnings from past performance reviews. Look for the `learning_content_patterns.md` memory file which contains:
 - Title patterns that work vs don't work
 - Content structure patterns from top performers
-- CTA patterns that drive Skool clicks
+- CTA patterns that drive blog clicks
 - Evolved generation rules based on real data
 
 Apply any learnings found to this article's generation. If no learnings exist yet, proceed with the baseline rules from context files.
@@ -93,9 +93,8 @@ Review your draft against brand-voice.md:
 - [ ] Average sentence length 15-20 words, max 25
 - [ ] Varied sentence lengths (natural burstiness, not uniform)
 - [ ] Active voice (passive under 10%)
-- [ ] No banned words (delve, tapestry, robust, leverage, etc.)
-- [ ] No corporate phrases ("we're excited to announce", "best-in-class")
-- [ ] No filler transitions ("that being said", "without further ado")
+- [ ] No banned AI words (delve, tapestry, robust, leverage, utilize, comprehensive, landscape, crucial, furthermore, indeed, moreover, paramount, facilitate, harness, unleash, game-changer, revolutionary)
+- [ ] No banned phrases ("we're excited to announce", "best-in-class", "in today's rapidly evolving landscape", "that being said", "without further ado")
 - [ ] Every magnitude claim has a specific number
 - [ ] Max 1 brand mention
 - [ ] Experience signals present ("When I tested...", "In my experience...")
@@ -137,7 +136,7 @@ title: "{title}"
 description: "{meta description}"
 date: "{YYYY-MM-DD}"
 dateModified: "{YYYY-MM-DD}"
-author: "YOUR NAME"
+author: "Sama Divine"
 category: "{category}"
 tags: ["{tag1}", "{tag2}", "{tag3}"]
 keywords: ["{primary_keyword}", "{secondary_keyword}"]

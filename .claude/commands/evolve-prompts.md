@@ -29,7 +29,7 @@ From top-performing articles (top 25% by reward score), identify:
 4. **Voice patterns**: What reads most naturally?
    - Sentence length variance, experience signal frequency, analogy usage
 
-5. **CTA patterns**: What drives Skool clicks?
+5. **CTA patterns**: What drives blog CTA clicks?
    - Placement, copy style, specificity level
 
 ### Step 3: Analyze What's Not Working

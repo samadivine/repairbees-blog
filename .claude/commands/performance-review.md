@@ -20,7 +20,7 @@ For each article with sufficient data (at least 7 days of metrics), calculate a 
 
 | Metric | Weight | Normalization |
 |--------|--------|--------------|
-| Skool CTA clicks | 35% | Relative to best performer |
+| Blog CTA clicks | 35% | Relative to best performer |
 | Click-through rate (CTR) | 25% | Against average CTR |
 | Average position | 15% | Inverse (lower position = higher score) |
 | Engagement time | 15% | Relative to content length |
@@ -95,7 +95,7 @@ After analysis, update the `learning_content_patterns.md` memory file with new f
 
 1. **Title Patterns**: What formats get the highest CTR? Add specific examples.
 2. **Content Structure**: What H2 count, section length, FAQ style gets best engagement?
-3. **CTA Patterns**: Which CTA variants drive the most Skool clicks?
+3. **CTA Patterns**: Which CTA variants drive the most blog clicks?
 4. **Topic Categories**: Which niches perform best?
 5. **Generation Rules**: Update any rules based on data — add new rules, modify existing ones, or note which rules to deprioritize.
 6. **Evolution Log**: Add a row with today's date, what changed, and why.

@@ -4,18 +4,23 @@
 ```yaml
 ---
 title: "{title}"
-description: "{description}"
+slug: "{slug}"
 date: "{YYYY-MM-DD}"
 dateModified: "{YYYY-MM-DD}"
-author: "YOUR NAME"
+description: "{meta description — 150-160 chars with one stat}"
+keywords:
+  - "{primary_keyword}"
+  - "{secondary_keyword}"
+  - "{related_keyword}"
 category: "{category}"
-tags: ["{tag1}", "{tag2}"]
-keywords: ["{primary_keyword}", "{secondary_keyword}"]
-image: "/blog/images/{slug}.webp"
+author: "Sama Divine"
+image: "/images/blog/{slug}.jpg"
 imageAlt: "{Descriptive sentence with topic keywords}"
-slug: "{slug}"
 readingTime: "{N} min read"
-contentType: "{how-to|listicle|comparison|tutorial|pillar|thought-leadership|news}"
+contentType: "{how-to|listicle|comparison|tutorial|pillar|cost-guide|emergency-fix}"
+cta:
+  text: "{CTA button text}"
+  url: "https://repairbees.com/blog"
 ---
 ```
 
@@ -25,58 +30,58 @@ Select template structure based on topic signals:
 
 | Signal in Topic | Content Type | Word Target |
 |----------------|-------------|-------------|
-| "How to...", "Guide to...", "Steps to..." | how-to | 2,000-2,500 |
-| Numbers in title ("10 Best...", "Top 5...") | listicle | 1,500-2,000 |
-| "X vs Y", "compared", "alternative to" | comparison | 1,500-2,000 |
-| "Tutorial", "walkthrough", "build", "implement" | tutorial | 2,500-3,500 |
-| "Complete guide", "everything about", "ultimate" | pillar | 3,000-4,000 |
-| Industry trend, "prediction", "future of" | thought-leadership | 2,000-3,000 |
-| News event, "update", "just released" | news | 800-1,200 |
+| "How to...", "Guide to...", "Steps to..." | how-to | 2,000–2,500 |
+| Numbers in title ("10 Best...", "Top 5...") | listicle | 1,500–2,000 |
+| "X vs Y", "compared", "alternative to" | comparison | 1,500–2,000 |
+| "Tutorial", "walkthrough", "fix", "repair" | tutorial | 2,500–3,500 |
+| "Complete guide", "everything about", "ultimate" | pillar | 3,000–4,000 |
+| "Cost", "price", "how much", "budget" | cost-guide | 1,500–2,000 |
+| "Emergency", "right now", "fast fix", "burst" | emergency-fix | 800–1,200 |
 
 Default: how-to (most versatile for informational intent).
 
 ## Universal Content Structure
 
-### 1. Opening (100-150 words max)
+### 1. Opening (100–150 words max)
 
-**Lead with concrete** — the first sentence MUST be one of:
-- A specific statistic with source
-- A code snippet or terminal output
-- A personal anecdote from real experience
-- A surprising or counterintuitive fact
+**Lead with the problem** — the first sentence MUST be one of:
+- A specific statistic with source about the problem
+- A real scenario the reader is likely dealing with right now
+- A surprising cost or consequence fact
+- A personal anecdote from real repair experience
 
 NO throat-clearing. NO "In today's world..." NO background/history first.
 
 ```markdown
 # {H1 Title — matches or closely mirrors meta title}
 
-{First sentence: specific fact, number, or anecdote.}
-{Second sentence: what this means for the reader.}
+{First sentence: specific fact, number, or problem scenario.}
+{Second sentence: what this means for the reader's home or wallet.}
 {Third sentence: what you'll learn / what you'll be able to do after reading.}
 ```
 
 **Strong opening example:**
 ```markdown
-Claude Code completed a 47-file refactor in 3 minutes that took me 2 hours
-manually last month. That's not a typo. Here's exactly how to set it up
-and which features actually matter.
+A single dripping faucet wastes 3,000+ gallons of water per year — that's
+roughly $20/month on your water bill for nothing. The fix takes 20 minutes
+and costs under $10 in parts. Here's exactly how to do it.
 ```
 
 **Weak opening example (NEVER do this):**
 ```markdown
-In the rapidly evolving world of AI-assisted development, developers are
-increasingly turning to new tools to boost their productivity. In this
-blog post, we'll explore one such tool...
+In today's world of rising home maintenance costs, homeowners are increasingly
+looking for ways to save money on plumbing repairs. In this comprehensive
+guide, we'll explore the various methods...
 ```
 
 ### 2. TL;DR Box (immediately after intro)
 
 ```markdown
 > **TL;DR**: {Core finding with one key statistic} ({Source}, {year}).
-> {1-2 sentences explaining the main takeaway and what the reader should do.}
+> {1–2 sentences explaining the main takeaway and what the reader should do.}
 ```
 
-### 3. Main Content (6-8 H2 Sections)
+### 3. Main Content (6–8 H2 Sections)
 
 #### H2 Section Pattern
 
@@ -85,49 +90,44 @@ Every H2 follows this structure:
 ```markdown
 ## {Question-format heading with keyword}?
 
-{ANSWER-FIRST: 40-60 word paragraph opening with a statistic and source,
-directly answering the heading's question. Use "X is Y because Z" structure.}
+{ANSWER-FIRST: 40–60 word paragraph opening with a statistic and source,
+directly answering the heading's question. Include one stat where possible.}
 
-{2-3 more paragraphs expanding on the answer with practical detail.}
+{2–3 more paragraphs expanding on the answer with practical detail.}
 
 ### {H3 Subsection if needed}
 
-{Practical example, code snippet, step-by-step, or comparison table.}
+{Practical steps, cost breakdown, tool list, or comparison table.}
 ```
 
-**Section word targets:**
-- Standard H2 section: 300-400 words
-- Lightweight section: 200-300 words
-- Heavy section (pillar): 400-600 words
-
 **Rules:**
-- 60-70% of H2s must be question-formatted
-- Every H2 opens with answer-first paragraph (40-60 words with stat)
+- 60–70% of H2s must be question-formatted
+- Every H2 opens with answer-first paragraph (40–60 words with stat)
 - Heading must convey specific information (not generic labels)
 - Include experience signal in at least 3 sections ("When I tested...", "In my experience...")
-- Keep passages 120-180 words between headings for optimal AI extraction
+- Keep passages 120–180 words between headings for optimal AI extraction
 
-### 4. Limitations / Honest Assessment (required for tool/technique articles)
+### 4. Limitations / When to Call a Professional
 
 ```markdown
-## What Are the Limitations of {Topic}?
+## When Should You Call a Professional?
 
 {Answer-first paragraph acknowledging real limitations with specifics.}
 
-- {Specific limitation 1 with context}
-- {Specific limitation 2 with context}
-- {When this approach doesn't work}
-- {What the alternatives are}
+- {Situation 1 where DIY isn't safe or practical}
+- {Situation 2 that requires licensed expertise}
+- {Signs the problem is bigger than it looks}
+- {Cost comparison: DIY gone wrong vs hiring a pro upfront}
 ```
 
-This section builds trust and is excellent for SEO — people actively search for "[tool] limitations" and "[tool] problems".
+This section builds trust and is excellent for SEO — people actively search for "when to call a plumber" and "DIY vs professional".
 
 ### 5. Mid-Article CTA (after the most valuable section, ~60% scroll depth)
 
 ```markdown
-> **{Topic-specific CTA headline — NOT generic "Ready to Level Up?"}**
-> {1-2 sentence value proposition tied directly to this article's topic.}
-> [{CTA Button Text} →]({cta_url})
+> **{Problem-specific CTA headline — NOT generic}**
+> {1–2 sentence value proposition tied directly to this article's topic.}
+> [{CTA Button Text} →](https://repairbees.com/blog?utm_source=blog&utm_medium=cta&utm_campaign={slug}&utm_content=cta-mid)
 ```
 
 ### 6. FAQ Section
@@ -137,7 +137,7 @@ This section builds trust and is excellent for SEO — people actively search fo
 
 ### {Question from People Also Ask — actual search query}?
 
-{40-60 word answer with a specific statistic and source attribution.
+{40–60 word answer with a specific statistic and source attribution.
 Must be self-contained — comprehensible without reading the article.}
 
 ### {Question 2}?
@@ -150,10 +150,10 @@ Must be self-contained — comprehensible without reading the article.}
 ```
 
 **Rules:**
-- 3-5 questions minimum
+- 3–5 questions minimum
 - Every answer MUST include a statistic with source
-- Questions should come from People Also Ask, Reddit, or common objections
-- Each answer is 40-60 words, self-contained
+- Questions should come from People Also Ask, Reddit, or common homeowner concerns
+- Each answer is 40–60 words, self-contained
 
 ### 7. Key Takeaways
 
@@ -161,76 +161,69 @@ Must be self-contained — comprehensible without reading the article.}
 ## Key Takeaways
 
 - {Takeaway 1 — specific and actionable}
-- {Takeaway 2 — includes a number or metric}
+- {Takeaway 2 — includes a number or cost}
 - {Takeaway 3 — what to do next}
-- {Takeaway 4 — surprising or counterintuitive finding}
+- {Takeaway 4 — when to call a professional}
 ```
 
 ### 8. End CTA
 
 ```markdown
-## {Topic-Specific CTA Heading}
-
-> **{Headline tied to article topic}**
+> **{Topic-specific CTA heading}**
 > {Value proposition specific to what was discussed — NOT generic.}
-> [{CTA Button Text} →]({cta_url})
+> [{CTA Button Text} →](https://repairbees.com/blog?utm_source=blog&utm_medium=cta&utm_campaign={slug}&utm_content=cta-end)
 ```
 
 ## Content-Type Specific Additions
 
 ### How-To Guide
-- Include prerequisites/requirements section after TL;DR
+- Include tools/materials needed section after TL;DR
 - Number steps clearly (Step 1, Step 2...)
 - Add "Common Mistakes to Avoid" section before FAQ
-- Include before/after comparison if applicable
+- Include estimated time and cost for the repair
 
-### Listicle
-- Number items in H2 headings: "## 1. {Item Name}: {Key Differentiator}"
-- Add quick comparison table at the beginning or end
-- Include evaluation methodology section
-- Each item needs: what it is, why it matters, specific data point
+### Cost Guide
+- Include price range table by repair type
+- Break down DIY cost vs professional cost
+- Note regional price variations
+- Include "hidden costs" section
+- Add "How to save money" section
+
+### Emergency Fix
+- Lead with immediate action steps (first 5 minutes)
+- Include "What NOT to do" section prominently
+- Provide temporary fix before permanent repair
+- Include emergency plumber contact guidance
 
 ### Comparison
-- Lead with quick comparison table (feature matrix)
+- Lead with quick comparison table (feature/cost matrix)
 - Dedicate equal depth to each option
 - Include "When to Choose X" vs "When to Choose Y" section
-- End with clear recommendation logic, not just "it depends"
-
-### Tutorial
-- Start with "What You'll Build" preview (screenshot or code output)
-- Include prerequisites with exact version numbers
-- Test all code examples — they must be runnable
-- Add troubleshooting section before FAQ
+- End with clear recommendation, not just "it depends"
 
 ### Pillar Page
 - Include table of contents after TL;DR
 - Link to supporting articles from every major section
 - Add "Tools & Resources" section
-- 5-8 FAQ questions (more than standard)
-
-### Thought Leadership
-- Open with contrarian take or tension point
-- Maintain single argument per section
-- Include "What I Think Will Happen" predictions section
-- Back opinions with data — every opinion needs evidence
+- 5–8 FAQ questions (more than standard)
 
 ## Information Gain Markers
 
-Mark sections that need original/unique content (not consensus AI can generate):
+Mark sections that need original/unique content:
 
-- **[INFO-GAIN: personal-experience]** — Author's first-hand testing/usage
-- **[INFO-GAIN: original-data]** — Proprietary benchmarks, surveys, experiments
-- **[INFO-GAIN: case-study]** — Real results with specific metrics
-- **[INFO-GAIN: practitioner-wisdom]** — Tips only from real-world usage
-- **[INFO-GAIN: contrarian-take]** — Opinion that differs from consensus
+- **[INFO-GAIN: personal-experience]** — Author's first-hand testing/repair experience
+- **[INFO-GAIN: original-data]** — Real cost quotes, measurements, time logs
+- **[INFO-GAIN: case-study]** — Real repair results with specific metrics
+- **[INFO-GAIN: practitioner-wisdom]** — Tips only from real-world plumbing experience
+- **[INFO-GAIN: cost-data]** — Actual price ranges from real quotes
 
 Every article must have at least 2 info-gain sections.
 
 ## Categories
-- `claude-code`
-- `vibe-coding`
-- `ai-tools`
-- `gemini`
-- `tutorials`
-- `comparisons`
-- `automation`
+- `plumbing-problems`
+- `home-repair`
+- `emergency-fixes`
+- `maintenance`
+- `cost-guides`
+- `seasonal`
+- `diy`

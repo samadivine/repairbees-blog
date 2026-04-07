@@ -16,7 +16,7 @@ Verify the article has:
 - [ ] 6+ H2 sections
 - [ ] FAQ section
 - [ ] Key takeaways
-- [ ] Skool CTAs (mid-article and end)
+- [ ] Blog CTAs (mid-article and end)
 
 If anything is missing, flag it and ask before proceeding.
 

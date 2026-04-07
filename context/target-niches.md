@@ -1,54 +1,54 @@
 # Target Niches & Seed Keywords
 
-## Priority 1: Plumbing Maintenance & Prevention (Month 1)
+## Priority 1: Plumbing Problems & Fixes (Month 1)
 ### Seed Keywords
-- plumbing maintenance checklist
-- how to maintain home plumbing
-- preventive plumbing maintenance
-- plumbing maintenance schedule
-- home plumbing inspection
-- plumbing maintenance tips
-- annual plumbing maintenance
-- plumbing system care
+- leaking pipe fix
+- blocked drain solution
+- water pressure problems
+- pipe burst emergency
+- toilet not flushing
+- dripping faucet repair
+- sewage smell in house
+- water heater not working
 
 ### Content Angles
-- Step-by-step seasonal maintenance checklists
+- Step-by-step repair guides with tool lists and costs
 - "Complete guide" for first-time homeowners
-- Tips and tricks from experienced plumbers
-- Cost comparison: maintenance vs emergency repair
-- Real-world case studies of prevented disasters
-
-## Priority 2: DIY Plumbing Repairs (Month 1-2)
-### Seed Keywords
-- how to fix a leaky faucet
-- unclog drain without plumber
-- toilet running constantly fix
-- how to fix low water pressure
-- DIY pipe repair
-- garbage disposal not working
-
-### Content Angles
-- Step-by-step repair guides with tool lists
-- Before/after comparisons
-- Common mistakes to avoid
+- Emergency "what to do right now" guides
 - When to DIY vs when to call a plumber
-- Cost savings from DIY repairs
+- Real-world case studies with cost breakdowns
 
-## Priority 3: Seasonal & Emergency Plumbing (Month 2)
+## Priority 2: Home Repair & Maintenance Guides (Month 1-2)
 ### Seed Keywords
-- prevent frozen pipes winter
-- water heater maintenance
-- sump pump maintenance
-- emergency plumbing what to do
-- spring plumbing checklist
-- water leak detection
+- home maintenance checklist
+- how to fix household problems
+- common home repair issues
+- DIY vs professional repair
+- preventing water damage
+- seasonal home maintenance
 
 ### Content Angles
-- Seasonal preparation guides
-- Emergency response checklists
-- Product reviews (pipe insulation, leak detectors, water heater parts)
-- Regional climate-specific advice
-- Insurance and damage prevention
+- Seasonal maintenance checklists (spring, winter prep)
+- Before/after comparisons of maintained vs neglected systems
+- Common mistakes homeowners make
+- Cost comparison: prevention vs emergency repair
+- Property manager maintenance schedules
+
+## Priority 3: Cost & Service Guides (Month 2)
+### Seed Keywords
+- plumber cost guide
+- cost to fix leaks
+- repair pricing estimates
+- emergency plumbing cost
+- home repair budgeting
+- plumbing quote comparison
+
+### Content Angles
+- Regional price range breakdowns
+- DIY cost vs professional cost comparisons
+- Hidden costs homeowners miss
+- How to evaluate plumber quotes
+- Insurance coverage for plumbing damage
 
 ## Topic Scoring Weights
 - search_volume_estimate: 0.3

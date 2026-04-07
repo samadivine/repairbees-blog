@@ -1,4 +1,4 @@
-Discover trending topics in the AI/coding niche for the blog.
+Discover trending topics in the plumbing and home repair niche for the blog.
 
 ## Instructions
 
@@ -59,7 +59,7 @@ Write the top 10 discovered topics to `topics/discovered.json` in this format:
   {
     "keyword": "the primary keyword",
     "title_suggestion": "Suggested article title",
-    "category": "claude-code|vibe-coding|ai-tools|gemini|tutorials|comparisons|automation",
+    "category": "plumbing-problems|home-repair|emergency-fixes|maintenance|cost-guides|seasonal|diy",
     "search_intent": "informational|commercial|transactional",
     "score": 85,
     "score_breakdown": {
